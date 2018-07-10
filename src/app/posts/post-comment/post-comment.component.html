@@ -1,0 +1,7 @@
+<p>
+  post-comment works!
+</p>
+<button routerLink="/post-list">Go Back</button>
+<div *ngFor="let comment of filteredComments">  
+  <label>{{comment.body}}</label><button>{{comment.id}}</button> 
+ </div>

@@ -1,0 +1,7 @@
+<p>
+  post-detail works!
+</p>
+<button routerLink="/post-list">Go Back</button>
+<div *ngFor="let fpost of filteredposts">  
+  <label>{{fpost.body}}</label><button>{{fpost.userId}}</button> 
+ </div>

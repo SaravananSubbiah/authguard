@@ -1,0 +1,8 @@
+<p>
+  post-list works!
+</p>
+<div *ngFor="let post of posts">
+  <!-- <button [routerLink]="['/post-detail', post.userId]">{{post.userId}}</button>  -->
+  <button [routerLink]="['/post-detail']" [queryParams]="{userId: post.userId}">{{post.userId}}</button>
+  <button [routerLink]="['/post-comment', post.id]">{{post.id}}</button>
+</div>
